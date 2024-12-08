@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+body {
+  /* min-height: 100vh; */
+  background: url('../public/bg.jpg');
+   /* background-size: cover; */
+  /* background-repeat: no-repeat;  */
+  animation: moveBackground 15s linear infinite; /* Infinite movement */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+::-webkit-scrollbar {
+  /* Customize the scrollbar width */
+  width:6px;
+}
+
+::-webkit-scrollbar-track {
+  /* Customize the scrollbar track */
+  background:#000;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb */
+  background-color: azure;
+  border-radius: 10px;
+}
